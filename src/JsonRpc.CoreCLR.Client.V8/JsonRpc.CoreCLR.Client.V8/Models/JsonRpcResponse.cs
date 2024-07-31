@@ -28,7 +28,7 @@ public class JsonRpcResponse<T>
     public string JsonRpc
     { get { return "2.0"; } }
 
-    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    //[JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("result")]
     public T Result { get; set; }
 

@@ -63,9 +63,17 @@ public class JsonRpcWebClient : IJsonRpcClient
         {
             var stringResponse = await GetResponseString(res);
 
-            var jsonResponse = await DeserializeResponse<T>(stringResponse);
-
-            return jsonResponse;
+            try
+            {
+                var jsonResponse = await DeserializeResponse<T>(stringResponse);
+                return jsonResponse;
+            }
+            catch (Exception ex)
+            {
+                var exception = new Exception("JsonResponse not deserialized. See the inner exception and exception data for details.", ex);
+                exception.Data.Add("Response", stringResponse);
+                throw exception;
+            }
         }
     }
 
