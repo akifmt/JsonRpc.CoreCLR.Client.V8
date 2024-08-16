@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Version>8.0.3</Version>
+		<Version>8.0.4</Version>
 		<Title>JsonRpc.CoreCLR.Client.V8</Title>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageReadmeFile>README_NUGET.md</PackageReadmeFile>
@@ -16,8 +16,8 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>dotnet;core;json-rpc;coreclr;dotnet;dotnet8;.net8</PackageTags>
 		<PackageReleaseNotes>Simple JSON-RPC Client for .NET 8. Fork from https://github.com/vmlf01/JsonRpc.CoreCLR.Client . No extra library dependencies. Newtonsoft.Json library dependency has been removed.</PackageReleaseNotes>
-		<AssemblyVersion>8.0.3.0</AssemblyVersion>
-		<FileVersion>8.0.3.0</FileVersion>
+		<AssemblyVersion>8.0.4.0</AssemblyVersion>
+		<FileVersion>8.0.4.0</FileVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
